@@ -1,23 +1,15 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": [
-      "esnext"
-    ],
-    "allowJs": false,
-    "noEmit": true,
-    "strict": true,
+    "target": "ESNext",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "types": [],
+    "lib": ["ESNext"],
+    "allowJs": false,
+    "noEmit": false,
+    "outDir": ".dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
   },
-  "include": ["src", "definition.d.ts"],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["src/"]
 }
